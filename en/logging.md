@@ -1,5 +1,4 @@
-﻿
-# Logging
+﻿# Logging
 
 Loging is a very powerful tool. It allows you to control your bot's actions and help you better understand bot's backend. When setting up the bot logging, keep in mind, there are 2 logging streams used by different parts of code:
 

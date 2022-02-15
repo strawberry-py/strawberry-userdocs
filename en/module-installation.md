@@ -1,5 +1,4 @@
-﻿ 
-# Module installation
+﻿# Module installation
 
 Module installation is realized by commands group `repository` for managing the module bundles hosted on GitHub and `module` for managing the individual command bundles.
 

@@ -1,9 +1,9 @@
-﻿# [pumpkin.py](https://github.com/pumpkin-py/pumpkin-py) documentation
+﻿# User documentation for [pumpkin.py](https://github.com/pumpkin-py/pumpkin-py)
 
-- [Module installation](inst.md): How to get more bot features?
+- [Permission management](en/acl.md): Walkthrough on how to set up the permissions securely.
 
-- [Logs settings](log.md): How to properly use logging?
+- [Module installation](en/module-installation.md): How to get more bot features?
 
-- [ACL setup](acl.md): How to set permissions for your guild? (Coming soon)
+- [Logging](en/logging.md): How to properly use logging?
 
-- [Functionalities setup & usage](func.md): Automated threading, pinning and bookmarking.
+- [Base functions](en/base-functions.md): Automated threading, pinning and bookmarking.
