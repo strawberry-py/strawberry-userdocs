@@ -1,33 +1,56 @@
 ﻿# Logging
 
-Loging is a very powerful tool. It allows you to control your bot's actions and help you better understand bot's backend. When setting up the bot logging, keep in mind, there are 2 logging streams used by different parts of code:
+Log configuration is realized by `logging` commands.
 
-## Scopes
+All commands described on this page are provided by the `base.logging` module.
 
-- **Bot Log** - only the technical staff should have access to this kind of log, it is used for backend actions that are independent of any guild.
-- **Guild Log** - only the server's moderator team should have access to this log, it is used for guild action and is handled for each guild independently.
+## tl;dr
 
-## Severity levels
+To start logging guild logs with level `INFO` and higher into the current channel, run
 
-Both of these options also have 6 defined levels of log severity. These are: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL` and `NONE`. They are used both in the codebase and in the log configuration. When configuring the bot level, only log messages with the **severity equal to or higher than the level provided for configuration** will be written to the log. For deployment, the level `INFO` is generally the best option because of transparency between users with access to restricted functionalities.
+```
+!logging set guild INFO
+```
 
-When entering the command the bot should provide you with additional command options (depends on ACL):  
-> __**logging**__  
-> \- **logging list**  
-> \- **logging set**  
-> \- **logging unset**
+To start logging all guild logs from module `base.acl`, run
 
-## logging list
-Usage: `logging list`  
-Lists server's logging settings.
+```
+!logging set guild DEBUG base.acl
+```
 
-## logging set
-Usage: `logging set <scope> <level> [module]`  
-Example use: `logging set guild info acl`  
-**NOTE:** This command sets the **textchannel where it was called** as its log output.  
-Argument scope is one of values: `bot` or `guild` ([see above](#scopes)). Argument `level` is one of [above referenced values](#severity-levels). Argument `scope` must be lowercase. Argument `module` is a name of a module and defaults to all modules. Active modules can be seen by calling the `repo list` command.
+You can list current loggers by running
 
-## logging unset
-Usage: `logging unset <scope> [module]`  
-Example use: `logging unset guild`  
-Unsets logging settings for a scope (`bot` or `guild`). Does not need to be called in the channel which is used as the log output.
+```
+!logging list
+```
+
+### Severity levels
+
+There are five severity levels: `DEBUG`, `INFO`, `WARNING`, `ERROR` and `CRITICAL`.
+
+They are not evenly distributed through the codebase; majority of log messages are `INFO` messages.
+
+## Command overview
+
+**NOTE:** No matter the logging configuration, logs are always being saved to offline file on the drive.
+You can configure this logging to properly see what is happening on your server.
+
+### `logging set <scope> <level> [module]`
+
+Start logging messages of at least `<level>` into current channel.
+
+As a guild admin you'll be using the `guild` scope.
+Bot owners may be interested in `bot` scope.
+
+To filter out logs from specific module into separate channel, you can specify the module filter as `<repository name>.<module name>`.
+Messages filtered by specific module channel are not being sent to the generic log channel.
+
+Messages with `bot` scope are replicated to all channels subscribed to the scope, messages with `guild` scope will not be logged in other guilds.
+
+### `logging unset <scope> [module]`
+
+Stop logging messages from given scope.
+
+### `logging list`
+
+Display currently enabled logs.
