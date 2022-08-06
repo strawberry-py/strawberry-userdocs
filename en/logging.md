@@ -12,7 +12,7 @@ To start logging guild logs with level `INFO` and higher into the current channe
 !logging set guild INFO
 ```
 
-To start logging all guild logs from module `base.acl`, run
+To start logging all guild logs from module `base.acl` into the current channel, run
 
 ```
 !logging set guild DEBUG base.acl
@@ -32,8 +32,7 @@ They are not evenly distributed through the codebase; majority of log messages a
 
 ## Command overview
 
-**NOTE:** No matter the logging configuration, logs are always being saved to offline file on the drive.
-You can configure this logging to properly see what is happening on your server.
+**NOTE:** No matter the logging configuration, all logs are always being saved to offline file on your server.
 
 ### `logging set <scope> <level> [module]`
 

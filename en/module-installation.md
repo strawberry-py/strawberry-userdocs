@@ -1,13 +1,13 @@
 ﻿# Module installation
 
 Module installation is realized by `repository` commands.
-You can manage all kinds of modules hosted on GitHub, GitLab or other git source.
+You can install extra modules that are hosted on GitHub, GitLab or other git source.
 
 All commands described on this page are provided by the `base.admin` module.
 
 ## tl;dr
 
-To install new repository into your bot instance, run
+To add new repository into your bot instance, run
 
 ```
 !repository install <git url>
@@ -15,7 +15,7 @@ To install new repository into your bot instance, run
 !repository install git@github.com:pumpkin-py/pumpkin-fun.git
 ```
 
-This assumes that the user account the bot is run under has SSH keys set up.
+**NOTE:** This assumes that the user account the bot is run under has SSH keys set up.
 The setup for that is out of scope of this documentation and should be handled by the bot administrator.
 
 This will clone the repository, verify that it contains required metadata and move it to the `modules/` directory.
@@ -56,7 +56,7 @@ When module is installed, it will have to be enabled with the `module` command.
 
 Perform `git pull`.
 
-If repository's `requirements.txt` (Python's way of describing required runtime libraries) gets updated, `pip` will be run to attempt package updates.
+If repository's `requirements.txt` was updated, `pip` will be run to attempt package updates.
 
 ### `repository checkout <repository name> <branch>`
 
