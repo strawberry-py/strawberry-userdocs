@@ -4,15 +4,6 @@ Commands described on this page are provided by the `base.baseinfo` and `base.ba
 
 ## Command overview
 
-### `ping`
-
-Display the latency between bot and Discord API gateway.
-This can be used to debug slow bot responses.
-
-### `uptime`
-
-Display boot time of the bot and the time it has been running since.
-
 ### `autothread ...`
 
 This can be used to create automatic threads on every message in a channel, which can be helpful for channels that are dedicated to QnAs.
