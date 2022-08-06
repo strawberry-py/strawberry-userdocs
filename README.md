@@ -1,6 +1,6 @@
 ﻿# User documentation for [pumpkin.py](https://github.com/pumpkin-py/pumpkin-py)
 
-## If you are a bot or server admin, read...
+## If you are a bot or server admin, ...
 
 - [Permission management](en/admin/acl.md): Walkthrough on how to set up the permissions securely.
 
@@ -12,4 +12,6 @@
 
 ## If you are regular user, ...
 
-...we don't have documentation for you yet; use the **help** command to see what's available!
+- look into what the bot can do [by default](en/user/base.md).
+
+or use the **help** command to see what's available!
