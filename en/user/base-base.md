@@ -38,3 +38,8 @@ If enabled, you and other members can add the 📌 (**:pushpin:**) emoji to any 
 Even if you don't have permission to open new threads, you can do that via the bot.
 
 If enabled, you and other members can add the 🧵 (**:thread:**) emoji to any message, and if enough of you react like this, a new thread will be opened.
+
+### Delete bot's DM messages
+
+Bot can send you DMs for some interactions.
+When you react to its message with the 🗑 (**:wastebasket:**) emoji, the message will be deleted, cleaning up your DM history.
