@@ -7,6 +7,7 @@
 - [Logging](en/admin/base-logging.md): How to properly use logging?
 - [Base functions](en/admin/base-base.md): Automated threading, pinning and bookmarking.
 - [Errors](en/admin/base-errors.md): Manage error reporting.
+- [Bot management](en/admin/base-bot-management.md): How to remotely manage bot?
 
 ## If you are regular user, ...
 
