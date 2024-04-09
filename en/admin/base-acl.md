@@ -67,5 +67,5 @@ Each command may have more specific overwrite, specified by role, channel or use
 Main characteristics have been outlined above.
 
 Use `!help <command>` to see more details or ask through GitHub issues -- either on
-[docs](https://github.com/pumpkin-py/docs/issues) or
-[bot](https://github.com/pumpkin-py/pumpkin-py/issues) repository page.
+[docs](https://github.com/strawberry-py/docs/issues) or
+[bot](https://github.com/strawberry-py/strawberry-py/issues) repository page.

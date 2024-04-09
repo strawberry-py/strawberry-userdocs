@@ -1,6 +1,6 @@
 # Language
 
-pumpkin.py framework supports localization. Supported languages are determined by our [`PoPie`](https://github.com/pumpkin-py/pumpkin-tools) package.
+strawberry.py framework supports localization. Supported languages are determined by our [`PoPie`](https://github.com/strawberry-py/strawberry-tools) package.
 
 At the time of writing, currently supported languages are:
 

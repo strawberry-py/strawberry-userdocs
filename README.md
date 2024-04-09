@@ -1,4 +1,4 @@
-﻿# User documentation for [pumpkin.py](https://github.com/pumpkin-py/pumpkin-py)
+﻿# User documentation for [strawberry.py](https://github.com/strawberry-py/strawberry-py)
 
 ## If you are a bot or server admin, ...
 

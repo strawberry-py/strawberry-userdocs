@@ -12,7 +12,7 @@ To add new repository into your bot instance, run
 ```
 !repository install <git url>
 # for example:
-!repository install git@github.com:pumpkin-py/pumpkin-fun.git
+!repository install git@github.com:strawberry-py/strawberry-fun.git
 ```
 
 **NOTE:** This assumes that the user account the bot is run under has SSH keys set up.
